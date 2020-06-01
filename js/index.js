@@ -69,5 +69,18 @@ const contact = navItems[5];
 contact.textContent = siteContent['nav']['nav-item-6'];
 contact.style.color = 'green';
 
-const navImage = navItems[6];
-navImage.
+
+
+// Header CTA 
+const ctaImage = document.getElementById('cta-img');
+ctaImage.setAttribute('src', siteContent['cta']['img-src']);
+
+const ctaButton = document.getElementsByTagName('button')[0];
+ctaButton.textContent = siteContent['cta']['button'];
+
+const ctaH1 = document.getElementsByTagName('h1')[0];
+ctaH1.textContent = siteContent['cta']['h1'];
+
+
+// Main Content
+const featuresHeading = document
