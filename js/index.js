@@ -37,6 +37,8 @@ const siteContent = {
   },
 };
 
+
+
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
@@ -68,6 +70,17 @@ about.style.color = 'green';
 const contact = navItems[5];
 contact.textContent = siteContent['nav']['nav-item-6'];
 contact.style.color = 'green';
+
+// New Nav Item
+const newNav1 = document.createElement('a');
+const newNav2 = document.createElement('a');
+
+newNav1.textContent = 'Store';
+newNav2.textContent = 'Home';
+document.querySelector('nav').appendChild(newNav1);
+document.querySelector('nav').prepend(newNav2);
+newNav1.style.color = 'green';
+newNav2.style.color = 'green';
 
 
 
@@ -121,3 +134,19 @@ visionParagraph.textContent = siteContent['main-content']["vision-content"]
 
 // Contact
 
+const contactHeading = document.getElementsByTagName('h4')[5];
+contactHeading.textContent = siteContent['contact']["contact-h4"];
+
+const address = document.getElementsByTagName('p')[5];
+address.textContent = siteContent['contact']["address"];
+
+const phone = document.getElementsByTagName('p')[6];
+phone.textContent = siteContent['contact']["phone"];
+
+const email = document.getElementsByTagName('p')[7];
+email.textContent = siteContent['contact']["email"];
+
+// Footer 
+
+const footerSection = document.getElementsByTagName('p')[8];
+footerSection.textContent = siteContent['footer']['copyright'];
